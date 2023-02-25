@@ -3,6 +3,7 @@ $color-secondary: #5637dd;
 $color-pale: #c3c8ff;
 $color-mid: #901cad;
 $color-dark: #60106b;
+$color-teal: #17a2b8;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 
 $body-font: "Open Sans", sans-serif;
@@ -66,7 +67,7 @@ header {
 }
 
 #reserveModal .modal-header {
-    background-color: #17a2b8;
+    background-color: $color-teal;
     color: white;
 }
 
