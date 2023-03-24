@@ -1,3 +1,4 @@
+//export const COMMENTS = [];
 export const COMMENTS = [
     {
         id: 0,
