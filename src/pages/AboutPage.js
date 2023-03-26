@@ -1,8 +1,4 @@
 import { Container, Col, Row, Card, CardBody, CardHeader } from 'reactstrap';
-import { useParams } from 'react-router-dom';
-import { selectCampsiteById } from '../features/campsites/campsitesSlice';
-import CampsiteDetail from '../features/campsites/CampsiteDetail';
-import CommentsList from '../features/comments/CommentsList';
 import SubHeader from '../components/SubHeader';
 import PartnersList from '../features/partners/PartnersList';
 

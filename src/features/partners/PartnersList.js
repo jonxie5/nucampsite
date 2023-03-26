@@ -2,7 +2,7 @@ import { Col } from 'reactstrap';
 import Partner from './Partner';
 import { selectAllPartners } from './partnersSlice';
 
-const PartnersList = ({ setCampsiteId }) => {
+const PartnersList = () => {
     const partners = selectAllPartners();
 
     return (
