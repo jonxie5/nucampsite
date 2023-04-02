@@ -66,14 +66,14 @@ const CommentForm = ({ campsiteId }) => {
                                     {(msg) => <p className='text-danger'>{msg}</p>}
                                 </ErrorMessage>
                             </FormGroup>
-                            <Label htmlFor='commentText'>Comment</Label>
-                            <Field
-                                name='commentText'
-                                as='textarea'
-                                rows='12'
-                                className='form-control'
-                            />
                             <FormGroup>
+                                <Label htmlFor='commentText'>Comment</Label>
+                                <Field
+                                    name='commentText'
+                                    as='textarea'
+                                    rows='12'
+                                    className='form-control'
+                                />
                             </FormGroup>
                             <Button type='submit' color='primary'>
                                 Submit
