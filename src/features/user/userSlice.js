@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     currentUser: null
@@ -12,15 +12,15 @@ const userSlice = createSlice({
             const newUser = {
                 ...state, currentUser: action.payload
             };
-            return newUser;
+            return newUser
         }
     }
 });
 
-export const userReducer = userSlice.reducer;
-export const { setCurrentUser } = userSlice.actions;
+export const userReducer = userSlice.reducer
+export const { setCurrentUser } = userSlice.actions
 
 export const selectCurrentUser = (state) => {
-    console.log(state.user.currentUser);
-    return state.user.currentUser;
+    console.log(state.user.currentUser)
+    return state.user.currentUser
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import {
     Navbar,
     NavbarBrand,
@@ -6,13 +6,13 @@ import {
     NavbarToggler,
     Nav,
     NavItem,
-} from 'reactstrap';
-import { NavLink } from 'react-router-dom';
-import NucampLogo from '../app/assets/img/logo.png';
-import UserLoginForm from '../features/user/UserLoginForm';
+} from 'reactstrap'
+import { NavLink } from 'react-router-dom'
+import NucampLogo from '../app/assets/img/logo.png'
+import UserLoginForm from '../features/user/UserLoginForm'
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false)
 
     return (
         <Navbar dark color='primary' sticky='top' expand='md'>
@@ -47,7 +47,7 @@ const Header = () => {
                 <UserLoginForm />
             </Collapse>
         </Navbar>
-    );
-};
+    )
+}
 
-export default Header;
+export default Header

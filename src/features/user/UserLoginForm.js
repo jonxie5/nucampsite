@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { setCurrentUser, selectCurrentUser } from './userSlice';
+import { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { setCurrentUser, selectCurrentUser } from './userSlice'
 import {
     Modal,
     ModalHeader,
@@ -8,16 +8,16 @@ import {
     FormGroup,
     Label,
     Button
-} from 'reactstrap';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
-import defaultAvatar from '../../app/assets/img/unicorn.png';
-import { validateUserLoginForm } from '../../utils/validateUserLoginForm';
+} from 'reactstrap'
+import { Formik, Field, Form, ErrorMessage } from 'formik'
+import defaultAvatar from '../../app/assets/img/unicorn.png'
+import { validateUserLoginForm } from '../../utils/validateUserLoginForm'
 
 const UserLoginForm = () => {
 
-    const [loginModalOpen, setLoginModalOpen] = useState(false);
-    const currentUser = useSelector(selectCurrentUser);
-    const dispatch = useDispatch();
+    const [loginModalOpen, setLoginModalOpen] = useState(false)
+    const currentUser = useSelector(selectCurrentUser)
+    const dispatch = useDispatch()
 
     const handleLogin = (values) => {
         const currentUser = {
@@ -25,12 +25,10 @@ const UserLoginForm = () => {
             avatar: defaultAvatar,
             username: values.username,
             password: values.password
-        };
-
-        //console.log(currentUser);
-        dispatch(setCurrentUser(currentUser));
-        setLoginModalOpen(false);
-    };
+        }
+        dispatch(setCurrentUser(currentUser))
+        setLoginModalOpen(false)
+    }
 
     return (
         <>
@@ -82,7 +80,6 @@ const UserLoginForm = () => {
             </Modal>
         </>
     )
-
 }
 
-export default UserLoginForm;
+export default UserLoginForm
