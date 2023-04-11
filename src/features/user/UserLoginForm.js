@@ -66,12 +66,16 @@ const UserLoginForm = () => {
                             <FormGroup>
                                 <Label htmlFor='username'>Username</Label>
                                 <Field id='username' name='username' placeholder='Username' className='form-control' />
-                                <ErrorMessage name='username'></ErrorMessage>
+                                <ErrorMessage name='username'>
+                                    {(msg) => <p className='username'>{msg}</p>}
+                                </ErrorMessage>
                             </FormGroup>
                             <FormGroup>
                                 <Label htmlFor='password'>Password</Label>
                                 <Field id='password' name='password' placeholder='Password' className='form-control' />
-                                <ErrorMessage name='password'></ErrorMessage>
+                                <ErrorMessage name='password'>
+                                    {(msg) => <p className='password'>{msg}</p>}
+                                </ErrorMessage>
                             </FormGroup>
                             <Button type='submit' color='primary'>Login</Button>
                         </Form>
