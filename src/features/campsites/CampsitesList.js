@@ -11,6 +11,7 @@ const CampsitesList = ({setCampsiteId}) => {
 
     const isLoading = useSelector((state) => state.campsites.isLoading)
     const errMsg = useSelector((state) => state.campsites.errMsg)
+
     if (isLoading) {
         return (
             <Row>
