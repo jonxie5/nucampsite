@@ -7,7 +7,6 @@ import Error from '../../components/Error'
 import Loading from '../../components/Loading'
 
 const CommentsList = ({ campsiteId }) => {
-    //const comments = selectCommentsByCampsiteId(campsiteId);
     const comments = useSelector(selectCommentsByCampsiteId(campsiteId));
     const isLoading = useSelector((state) => state.comments.isLoading)
     const errMsg = useSelector((state) => state.comments.errMsg)
